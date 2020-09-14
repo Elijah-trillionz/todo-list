@@ -1,0 +1,73 @@
+<!--Designed with love by Elijah-->
+<!--This web app may not function well on newer versions of mozilla firefox-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="../fontawesome/css/all.css" />
+    <link rel="stylesheet" href="stye.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="list-wrapper">
+        <div class="header">
+          <!--<h2>To Do List</h2>-->
+          <a href="index.html"
+            ><div class="all">
+              <i class="fa fa-home"></i></div
+          ></a>
+          <a href="completed.html"
+            ><div class="completed">
+              <i class="far fa-check-circle"></i></div
+          ></a>
+          <a href="#"
+            ><div class="pending page-on">
+              <i class="far fa-circle"></i></div
+          ></a>
+          <a href="important.html"
+            ><div class="favorites">
+              <i class="fa fa-star"></i></div
+          ></a>
+          <a href="#"
+            ><div class="theme">
+              <i class="far fa-moon"></i></div
+          ></a>
+        </div>
+        <div class="content">
+          <div class="default">
+            <p style="border-bottom: 1px solid #292828"></p>
+            <p style="border-bottom: 1px solid #292828"></p>
+            <p style="border-bottom: 1px solid #292828"></p>
+            <p style="border-bottom: 1px solid #292828"></p>
+            <p style="border-bottom: 1px solid #292828"></p>
+            <p style="border-bottom: 1px solid #292828"></p>
+            <p style="border-bottom: 1px solid #292828"></p>
+          </div>
+          <div class="footer">
+            <div class="modal">
+              <form name="addTodoForm">
+                <div class="inputForm">
+                  <input type="text" id="input" placeholder="Add a task" />
+                </div>
+                <button id="button" type="submit" disabled>
+                  <i class="fas fa-paper-plane" style="font-size: 28px"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script>
+      spans.forEach((value) => {
+        if (/active/g.test(value.className)) {
+          value.parentElement.remove();
+        }
+      });
+    </script>
+    <noscript>dude get a latest browser..</noscript>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: black;
+  padding: 0 0 22px 0;
+}
+body.light {
+  background: #f4f4f4;
+}
+.header {
+  color: orange;
+  display: flex;
+  justify-content: space-between;
+  background: #292828;
+}
+.header.light {
+  color: white;
+}
+.header a div {
+  margin: 0;
+  background: #292828;
+  padding: 20px 23px;
+  width: 100%;
+  text-align: center;
+}
+.header.light a div {
+  background: rgb(33, 132, 245, 0.8);
+  color: white;
+}
+.header div:hover {
+  background: #393838;
+}
+.header.light div:hover {
+  background: rgb(33, 132, 245);
+}
+.header div.page-on {
+  background: #494848;
+}
+.header.light div.page-on {
+  background: rgba(33, 132, 245, 0.5);
+}
+.header a {
+  text-decoration: none;
+  color: orange;
+  cursor: default;
+  width: 100%;
+}
+.content {
+  padding-bottom: 60px;
+  padding: 22px 12px;
+}
+.content p {
+  font-family: monospace;
+}
+.footer {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  margin-top: 20px;
+  bottom: 0;
+  left: 0;
+}
+.modal {
+  background: #292828;
+  border-radius: 4px;
+  width: 100%;
+  margin: 0;
+  padding: 12px 22px;
+}
+.modal.light {
+  background: rgba(20, 68, 124, 0.87);
+}
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.inputForm {
+  width: 70%;
+}
+input[type="text"] {
+  padding: 6px 18px;
+  width: 100%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+  font-size: 17px;
+}
+.modal.light input[type="text"] {
+  background: rgba(20, 68, 124, 0);
+}
+.modal.light input[type="text"]::placeholder {
+  color: #aaa;
+}
+input:focus {
+  outline: none;
+}
+button {
+  margin: 0px 0 0 10px;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.modal.light button {
+  background: rgba(20, 68, 124, 0);
+}
+button:disabled {
+  color: #696868;
+}
+.modal.light button:disabled {
+  color: #aaa;
+}
+button:focus {
+  outline: none;
+}
+.fa-plane-paper {
+  width: 30%;
+}
+.fa-plus-alt {
+  margin-top: 3px;
+}
+div.span {
+  padding: 1px 34px 1px 24px;
+  color: white;
+  word-wrap: break-word;
+  /*word-break: break-all;*/
+}
+
+div.span.active {
+  color: #aaa;
+  text-decoration: line-through;
+}
+div.span.light {
+  color: black;
+}
+p {
+  background: #292828;
+  margin: 0 5px 8px 5px;
+  padding: 18px 33px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+}
+p:hover {
+  background: #393838;
+}
+p.light {
+  background: rgba(20, 68, 124, 0.87);
+}
+p.light:hover {
+  background: rgba(20, 68, 124, 0.768);
+}
+.default p {
+  background: none;
+  margin-bottom: 25px;
+  border-radius: none;
+  padding: none;
+  position: none;
+}
+p .fa-check-circle,
+p .fa-circle,
+p .fa-star,
+p .fa-trash {
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: 30%;
+  cursor: pointer;
+}
+p .fa-check-circle,
+p .fa-circle {
+  left: 10px;
+}
+p .fa-star {
+  right: 40px;
+}
+p .fa-trash {
+  right: 5px;
+  color: tomato;
+}
+p.light .fa-trash {
+  color: rgb(197, 32, 32);
+}
+p .fa-check-circle {
+  color: orange;
+}
+@media only screen and (min-width: 750px) {
+  .content {
+    padding: 22px 10pc;
+  }
+}
